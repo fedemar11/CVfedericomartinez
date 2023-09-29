@@ -22,6 +22,7 @@
 
 img {
     box-shadow: 3px 3px 3px rgb(19, 79, 90);
+    max-width: 100%;
 }
 
 body {
@@ -231,7 +232,11 @@ label {
     display: none;
 }
 
-@media all and (max-width: 710px) {
+@media screen and (max-width: 768px) {
+    .portada{
+        max-width: 100%;
+        flex-direction: column;
+    }
 
     input:checked~ul {
         display: block;
@@ -250,7 +255,7 @@ label {
     }
 
     .secciones:active {
-        background-color: rgba(255, 255, 255, 0.867) !important;
+        background-color: rgba(45, 2, 70, 0.867) !important;
     }
 
     .inicio {
